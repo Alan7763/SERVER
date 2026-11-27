@@ -25,7 +25,7 @@ FALLBACKS = [
 def refill_cache(phase: str):
     nivel = "avanzado de concurrencia, seguridad o arquitectura" if phase == "enraged" else "intermedio de ingeniería de software, POO, Git o bases de datos"
     prompt = (
-        f"Genera exactamente 10 preguntas distintas de opción múltiple (A, B, C, D) de nivel {nivel} en español. "
+        f"Genera exactamente 10 preguntas cortas y faciles distintas de opción múltiple (A, B, C, D) de nivel {nivel} en español. "
         "Responde ÚNICAMENTE con un JSON válido con la clave 'items', donde cada elemento tenga: "
         "'Question' (string), 'Options' (lista de 4 strings empezando con 'A) ', 'B) ', 'C) ', 'D) ') y 'Correct' ('A', 'B', 'C' o 'D')."
     )
